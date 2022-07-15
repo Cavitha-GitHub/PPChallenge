@@ -4,17 +4,17 @@
 
 The City of Santa Monica publishes their Building Permit Inspection Schedule as open data. Building inspectors need to travel to various locations throughout the day to inspect building that are under construction. Building inspector supervisors need to ensure timely delivery of services and analyze overall trends. The purpose of this project is to help the Building and Safety Division manage their requests for building permit inspections & enable building inspectors to complete their day to day inspection tasks. 
 
-**Proposed solution**
+**Proposed solution:**
 
 Power Platform is a low code/no code platform which can be used to build powerful apps that can be used on various devices. It can also be used to build automated flows to meet the business process needs of the organisation. Hence, the proposal is to use the power of the platform to provide a easy to use app for inspection management and to automate the process to reduce the workload of inspectors and supervisors.
 
-**Inspection Process**
+**Inspection Process:**
 
 The diagram below depicts the inspection process.
 
 ![image](https://user-images.githubusercontent.com/10726964/179200615-758663eb-148f-4e92-b4d3-15835586dabb.png)
 
-**User Persona**
+**User Persona:**
 
   Admin - Admin/Maintainence of the system ( future )
   
@@ -22,7 +22,7 @@ The diagram below depicts the inspection process.
   
   Inspector - Carries out the inspection and uploads any relevant documentation
 
-**Import data - Automated Process**
+**Import data - Automated Process:**
 
 A dataflow is run at 7 p.m GST to import the inspection requests from the dataset published in the below website
 
@@ -30,7 +30,7 @@ https://data.smgov.net/Permits-Licenses/Permit-Inspections-Schedule/xird-2kxi
 
 The schedule can be changed as desired.
 
-**Schedule Inspections**
+**Schedule Inspections:**
 
 The supervisor can use the **Inspections Scheduler**, a Model Driven app to review the inspections and carry out the following tasks:
     Assign an inspector
@@ -44,7 +44,7 @@ The model driven app has business rules to check for valid data entry such as pe
 A business process flow guides the supervisor through the various stages. The model driven app is enabled for offline mode to enable the supervisor to use the app while making field visits with poor network coverage.
 
 
-**Manage Scheduled Inspections**
+**Manage Scheduled Inspections:**
 
 As inspectors can use the **Inspections Manager**, a canvas app to manage inspections assigned to them.
 
@@ -54,7 +54,7 @@ The app has the following functionality:
   Provides details of inspections in list view and calendar view
   Reporting and Approval review features ( to be implemented )
   
-**Solution Components**
+**Solution Components:**
 
 The components of the project are packaged into a managed (test & prod environment) & unmanaged (dev environment) solutions and consist of the following objects:
 
@@ -101,7 +101,9 @@ Business Inspection Import dataflow to import the data from Santa Monica Open da
 Inspections Scheduler - Model driven app used by supervisors to schedule inspections and grant permits
 Inspections Manager - Canvas App used by inspectors to manage their inspections and to report back only inspection is carried out.
 
-**Future Enhancements** - Not implemented yet
+**Future Enhancements:**
+
+The below features are in scope for next version of the project
 
 **Security Groups** - To manage different set of users and based on their roles.
 
