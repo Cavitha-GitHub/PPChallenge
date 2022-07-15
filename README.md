@@ -17,11 +17,11 @@ The diagram below depicts the inspection process.
 
 **User Persona:**
 
-  Admin - Admin/Maintainence of the system ( future )
+ * Admin - Admin/Maintainence of the system ( future )
   
-  Supervisor - Creates & Assigns Inspections, Reviews Inspection reports and issues building permit
+ * Supervisor - Creates & Assigns Inspections, Reviews Inspection reports and issues building permit
   
-  Inspector - Carries out the inspection and uploads any relevant documentation
+ * Inspector - Carries out the inspection and uploads any relevant documentation
 
 **Import data - Automated Process:**
 
@@ -34,11 +34,11 @@ The schedule can be changed as desired.
 **Schedule Inspections:**
 
 The supervisor can use the **Inspections Scheduler**, a Model Driven app to review the inspections and carry out the following tasks:
-    Assign an inspector
-    Choose an estimated inspection arrival date/time
-    Upload any relevant documentation/report that needs to be updated during inspection.
-    Review inspection
-    Issue building permit
+  *  Assign an inspector
+  *  Choose an estimated inspection arrival date/time
+  *  Upload any relevant documentation/report that needs to be updated during inspection.
+  *  Review inspection
+  *  Issue building permit
 
 The model driven app has business rules to check for valid data entry such as permit expiration date should not be less than issuance date, make estimated inspection date mandatory when an inspector is assigned and to enable the permit issue stage only after the supervisor has approved the inspection.
 
@@ -53,11 +53,9 @@ As inspectors can use the **Inspections Manager**, a canvas app to manage inspec
 
 The app has the following functionality:
 
-Displays the logged in user's image, name and email address
-
-Provides details of inspections in list view and calendar view
-
-Reporting and Approval review features ( to be implemented )
+  * Displays the logged in user's image, name and email address
+  * Provides details of inspections in list view and calendar view
+  * Reporting and Approval review features ( to be implemented )
 
 ![image](https://user-images.githubusercontent.com/10726964/179261650-f63b6334-f7f8-4cba-b7b5-2931b01a15d6.png)
 
@@ -74,10 +72,10 @@ For the purpose of simplicity, only 3 tables are used in the project
     Users - System table that contains the users of power platform/environment.
 
 **Flows**
+
 An automated cloud flow named "Send notification when inspection scheduled" is triggered when an inspector is assigned to the inspection task. The flow sends an approval request to the inspector.
 
 ![image](https://user-images.githubusercontent.com/10726964/179261683-e1eb2dbd-76b3-464d-9acc-c6500dcb7377.png)
-
 
 If the inspector approves the request, it assigns the task to the inspector. A group calendar event is created, so the supervisors and inspectors have visibility of each other's scheduled inspections.
 
@@ -90,10 +88,10 @@ If the inspector rejects the request, a teams meessage is sent to the supervisor
 
 **Environmental Variables**
 
-Supervisor Channel Id - Used to send teams message when an inspector rejects the request
+* Supervisor Channel Id - Used to send teams message when an inspector rejects the request
           To get the channel id, go to the channel and copy the id inbetween "threadId=" and "&ctx=channel"
           
-Team Group Id - Used to create a group calendar event when an inspector accepts the request
+* Team Group Id - Used to create a group calendar event when an inspector accepts the request
           To get the team group id, go to the team, click on 3 dots and choose "Get link to team". The copy the group id value 
 
 **Business Rules**
@@ -114,20 +112,20 @@ Business Inspection Import dataflow to import the data from Santa Monica Open da
 
 **PowerApps**
 
-Inspections Scheduler - Model driven app used by supervisors to schedule inspections and grant permits
-Inspections Manager - Canvas App used by inspectors to manage their inspections and to report back only inspection is carried out.
+* Inspections Scheduler - Model driven app used by supervisors to schedule inspections and grant permits
+* Inspections Manager - Canvas App used by inspectors to manage their inspections and to report back only inspection is carried out.
 
 **Future Enhancements:**
 
 The below features are in scope for next version of the project
 
-**Security Groups** - To manage different set of users and based on their roles.
+* **Security Groups** - To manage different set of users and based on their roles.
 
-**Field Secruity Profile** - Configure field security based on the user roles.
+* **Field Secruity Profile** - Configure field security based on the user roles.
 
-**Power BI Reports** - Dashboards for inspectors and supervisors
+* **Power BI Reports** - Dashboards for inspectors and supervisors
 
-**Canvas App offline capability** - Enable offline capability for the canvas app so inspectors can use it in remote sites with poor network coverage.
+* **Canvas App offline capability** - Enable offline capability for the canvas app so inspectors can use it in remote sites with poor network coverage.
 
 
 
