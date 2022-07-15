@@ -28,3 +28,6 @@ As inspectors are field based, they would
 
 **Environmental Variables**
 
+**Security Groups**
+
+**Field Secruity Profile**
