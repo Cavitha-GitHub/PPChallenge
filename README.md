@@ -1,6 +1,12 @@
 # Inspection App
 
-To build an app to help building inspectors to complete their day to day inspection tasks. The City of Santa Monica publishes their Building Permit Inspection Schedule as open data. Building inspectors need to travel to various locations throughout the day to inspect building that are under construction. Building inspector supervisors need to ensure timely delivery of services and analyze overall trends. The app will help Building and Safety Division manage their requests for building permit inspections.
+**Problem Statement:**
+
+The City of Santa Monica publishes their Building Permit Inspection Schedule as open data. Building inspectors need to travel to various locations throughout the day to inspect building that are under construction. Building inspector supervisors need to ensure timely delivery of services and analyze overall trends. The purpose of this project is to help the Building and Safety Division manage their requests for building permit inspections & enable building inspectors to complete their day to day inspection tasks. 
+
+**Proposed solution**
+
+Power Platform is a low code/no code platform which can be used to build powerful apps that can be used on various devices. It can also be used to build automated flows to meet the business process needs of the organisation. Hence, the proposal is to use the power of the platform to provide a easy to use app for inspection management and to automate the process to reduce the workload of inspectors and supervisors.
 
 **Inspection Process**
 
@@ -94,9 +100,17 @@ Business Inspection Import dataflow to import the data from Santa Monica Open da
 
 Inspections Scheduler - Model driven app used by supervisors to schedule inspections and grant permits
 Inspections Manager - Canvas App used by inspectors to manage their inspections and to report back only inspection is carried out.
-    
-**Security Groups** - Not implemented
 
-**Field Secruity Profile** - Not implemented
+**Future Enhancements** - Not implemented yet
 
-**Disclaimer :** The project has been developed to showcase the power of Power Platform and it's ease of use to quickly create apps and map an organisation's business prorcess. The project is work in progress and it should be tested before using it in production environment.
+**Security Groups** - To manage different set of users and based on their roles.
+
+**Field Secruity Profile** - Configure field security based on the user roles.
+
+**Power BI Reports** - Dashboards for inspectors and supervisors
+
+**Canvas App offline capability** - Enable offline capability for the canvas app so inspectors can use it in remote sites with poor network coverage.
+
+
+
+      Disclaimer: The project has been developed to showcase the power of Power Platform and it's ease of use to quickly create apps and map an organisation's business prorcess. The project is work in progress and it should be tested before using it in production environment.
