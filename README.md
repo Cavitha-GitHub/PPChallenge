@@ -59,7 +59,7 @@ Provides details of inspections in list view and calendar view
 
 Reporting and Approval review features ( to be implemented )
 
-![image](https://user-images.githubusercontent.com/10726964/179240527-ede63a31-18d6-4c29-b996-33ac9cbd0d1a.png)
+![image](https://user-images.githubusercontent.com/10726964/179261650-f63b6334-f7f8-4cba-b7b5-2931b01a15d6.png)
 
   
 **Solution Components:**
@@ -75,6 +75,9 @@ For the purpose of simplicity, only 3 tables are used in the project
 
 **Flows**
 An automated cloud flow named "Send notification when inspection scheduled" is triggered when an inspector is assigned to the inspection task. The flow sends an approval request to the inspector.
+
+![image](https://user-images.githubusercontent.com/10726964/179261683-e1eb2dbd-76b3-464d-9acc-c6500dcb7377.png)
+
 
 If the inspector approves the request, it assigns the task to the inspector. A group calendar event is created, so the supervisors and inspectors have visibility of each other's scheduled inspections.
 
