@@ -43,6 +43,9 @@ The model driven app has business rules to check for valid data entry such as pe
 
 A business process flow guides the supervisor through the various stages. The model driven app is enabled for offline mode to enable the supervisor to use the app while making field visits with poor network coverage.
 
+![image](https://user-images.githubusercontent.com/10726964/179237581-bb282623-1bd0-4f3c-91e4-8134b91d18e8.png)
+![image](https://user-images.githubusercontent.com/10726964/179237829-dfb02b50-af4c-4e80-926d-c3eccaba6bb1.png)
+
 
 **Manage Scheduled Inspections:**
 
@@ -50,9 +53,17 @@ As inspectors can use the **Inspections Manager**, a canvas app to manage inspec
 
 The app has the following functionality:
 
-  Displays the logged in user's image, name and email address
-  Provides details of inspections in list view and calendar view
-  Reporting and Approval review features ( to be implemented )
+Displays the logged in user's image, name and email address
+
+Provides details of inspections in list view and calendar view
+
+Reporting and Approval review features ( to be implemented )
+
+![image](https://user-images.githubusercontent.com/10726964/179238507-bdbc1c24-64c6-483d-b2f4-ab9741569f0f.png)
+![image](https://user-images.githubusercontent.com/10726964/179238595-c9061262-2abf-4f10-a6b9-ba1b0312817e.png)
+![image](https://user-images.githubusercontent.com/10726964/179238683-a404bcfb-9c36-4c84-a48b-63b74de7d61e.png)
+![image](https://user-images.githubusercontent.com/10726964/179238793-6684d10c-e439-4026-9c9c-b8948cdb3e8c.png)
+
   
 **Solution Components:**
 
