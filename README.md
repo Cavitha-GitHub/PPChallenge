@@ -81,7 +81,12 @@ An automated cloud flow named "Send notification when inspection scheduled" is t
 
 If the inspector approves the request, it assigns the task to the inspector. A group calendar event is created, so the supervisors and inspectors have visibility of each other's scheduled inspections.
 
+![image](https://user-images.githubusercontent.com/10726964/179262792-21b0bfd9-a1f7-4900-b10d-a75fa9064d53.png)
+
 If the inspector rejects the request, a teams meessage is sent to the supervisor channel asking them to re-assign the inspection task. This channel can be a private channel so only supervisors can view the message.
+
+![image](https://user-images.githubusercontent.com/10726964/179263067-00508073-d443-4584-9ba9-c382782b3c77.png)
+
 
 **Environmental Variables**
 
