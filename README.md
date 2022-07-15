@@ -12,7 +12,8 @@ Power Platform is a low code/no code platform which can be used to build powerfu
 
 The diagram below depicts the inspection process.
 
-![image](https://user-images.githubusercontent.com/10726964/179200615-758663eb-148f-4e92-b4d3-15835586dabb.png)
+![image](https://user-images.githubusercontent.com/10726964/179246808-553bb0bf-f5d1-42bb-b993-dda83ce0beeb.png)
+
 
 **User Persona:**
 
