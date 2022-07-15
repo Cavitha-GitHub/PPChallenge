@@ -77,9 +77,10 @@ An automated cloud flow named "Send notification when inspection scheduled" is t
 
 ![image](https://user-images.githubusercontent.com/10726964/179261683-e1eb2dbd-76b3-464d-9acc-c6500dcb7377.png)
 
-If the inspector approves the request, it assigns the task to the inspector. A group calendar event is created, so the supervisors and inspectors have visibility of each other's scheduled inspections.
+If the inspector approves the request, it assigns the task to the inspector. A group calendar event is created, so the supervisors and inspectors have visibility of each other's scheduled inspections. The inspector can add the calendar item to their own calendar if needed.
 
-![image](https://user-images.githubusercontent.com/10726964/179262792-21b0bfd9-a1f7-4900-b10d-a75fa9064d53.png)
+![image](https://user-images.githubusercontent.com/10726964/179264886-1fac58d2-70e6-4531-b444-5c27439a831b.png)
+
 
 If the inspector rejects the request, a teams meessage is sent to the supervisor channel asking them to re-assign the inspection task. This channel can be a private channel so only supervisors can view the message.
 
@@ -120,13 +121,10 @@ Business Inspection Import dataflow to import the data from Santa Monica Open da
 The below features are in scope for next version of the project
 
 * **Security Groups** - To manage different set of users and based on their roles.
-
 * **Field Secruity Profile** - Configure field security based on the user roles.
-
 * **Power BI Reports** - Dashboards for inspectors and supervisors
-
 * **Canvas App offline capability** - Enable offline capability for the canvas app so inspectors can use it in remote sites with poor network coverage.
+* **Check inspector availability** - Check inspector availability based on their calendar before assigning inspection.
+* **Chatbots** - Chatbots to help the inspector or supervisor to gather additional details based on inspection type, building type etc
 
-
-
-      Disclaimer: The project has been developed to showcase the power of Power Platform and it's ease of use to quickly create apps and map an organisation's business prorcess. The project is work in progress and it should be tested before using it in production environment.
+**Disclaimer**: The project has been developed to showcase the power of Power Platform and it's ease of use to quickly create apps and map an organisation's business prorcess. The project is work in progress and it should be tested before using it in production environment.
