@@ -50,21 +50,53 @@ The app has the following functionality:
   
 **Solution Components**
 
-The artecfacts are packaged into a managed (test & prod environment) & unmanaged (dev environment) solutions and consist of the following objects:
+The components of the project are packaged into a managed (test & prod environment) & unmanaged (dev environment) solutions and consist of the following objects:
 
 **Tables**
+
 For the purpose of simplicity, only 3 tables are used in the project
-  Building Inspection Request - Custom table created to store the inspection data
-  Supervisor BPF - Created by business process flow to save details about the process stages
-  Users - System table that contains the users of power platform/environment.
+    Building Inspection Request - Custom table created to store the inspection data
+    Supervisor BPF - Created by business process flow to save details about the process stages
+    Users - System table that contains the users of power platform/environment.
 
 **Flows**
+An automated cloud flow named "Send notification when inspection scheduled" is triggered when an inspector is assigned to the inspection task. The flow sends an approval request to the inspector.
 
+If the inspector approves the request, it assigns the task to the inspector. A group calendar event is created, so the supervisors and inspectors have visibility of each other's scheduled inspections.
+
+If the inspector rejects the request, a teams meessage is sent to the supervisor channel asking them to re-assign the inspection task. This channel can be a private channel so only supervisors can view the message.
 
 **Environmental Variables**
 
-**Security Groups**
+Supervisor Channel Id - Used to send teams message when an inspector rejects the request
+          To get the channel id, go to the channel and copy the id inbetween "threadId=" and "&ctx=channel"
+          
+Team Group Id - Used to create a group calendar event when an inspector accepts the request
+          To get the team group id, go to the team, click on 3 dots and choose "Get link to team". The copy the group id value 
 
-**Field Secruity Profile**
+**Business Rules**
+
+The following business rules are implemented
+
+![image](https://user-images.githubusercontent.com/10726964/179232614-5a6ccbc8-84fb-4716-abc1-bc9a0fd78f68.png)
+
+**Business Process Flows**
+
+Supervisor BPF to guide the supervisor with the inspection scheduling and permit allocation process.
+
+![image](https://user-images.githubusercontent.com/10726964/179231296-49ae6d7a-3f1f-4029-add6-f69752c57202.png)
+
+**DataFlow**
+
+Business Inspection Import dataflow to import the data from Santa Monica Open dataset into Dataverse on a periodic basis
+
+**PowerApps**
+
+Inspections Scheduler - Model driven app used by supervisors to schedule inspections and grant permits
+Inspections Manager - Canvas App used by inspectors to manage their inspections and to report back only inspection is carried out.
+    
+**Security Groups** - Not implemented
+
+**Field Secruity Profile** - Not implemented
 
 **Disclaimer :** The project has been developed to showcase the power of Power Platform and it's ease of use to quickly create apps and map an organisation's business prorcess. The project is work in progress and it should be tested before using it in production environment.
