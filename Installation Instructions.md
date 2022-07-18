@@ -10,6 +10,10 @@ Create the following connection references:
 •	Approvals
 •	O365 Groups
 
+**Create Offline Profile**
+
+Setup Mobile Offline Profile
+
 **Create Microsoft Teams - Team & Channel**
 
 Create a team (if does not exist) and supervisor channel and gather the id's  as mentioned below:
