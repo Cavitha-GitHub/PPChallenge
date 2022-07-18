@@ -50,7 +50,7 @@ b.	If you’re installing into a dev environment, use the BuildingInspection_. x
 
 **Turn on flow**
 
-Make sure the Send notification when inspection scheduled is turned on.
+Make sure the **Send notification when inspection scheduled** is turned on.
 
 **Share Apps**
 
