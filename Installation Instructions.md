@@ -55,4 +55,5 @@ Make sure the Send notification when inspection scheduled is turned on.
 **Share Apps**
 
 Share Inspections Scheduler, Model Driven App with Supervisors
+
 Share Inspections Manager, Canvas App with Inspectors
